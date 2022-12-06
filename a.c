@@ -19,7 +19,7 @@ void *gateN(void *input)
 		pthread_mutex_lock(&lock);
 	
 		
-		count= count + 1;
+		count= count + 4;
 		total_count= total_count+ 1;
 		if((count%500)==0)
 			printf("%d have entered from the %s gate.\nTotal poeple = %d Remaining seats = %d\n",count, ((struct args*)input)->str, total_count, max_count-count);
